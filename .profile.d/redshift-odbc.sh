@@ -4,7 +4,7 @@ export ODBCSYSINI=${HOME}/.apt/usr/lib/redshift/odbc/conf/
 
 echo "[redshift]
 Description=RedshiftDB
-Driver=Amazon Redshift (x64)
+Driver=RedshiftDSIIDriver
 Locale=en-US
 PORT=5439
 SSL=on
