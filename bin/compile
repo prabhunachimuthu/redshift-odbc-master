@@ -12,19 +12,19 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-arrow "Installing driver config"
-#mkdir -p "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/lib" | indent
-cp amazon.redshiftodbc.ini "${BUILD_DIR}/.apt/etc/amazon.redshiftodbc.ini" | indent
-cp libamazonredshiftodbc64.so "${BUILD_DIR}/.apt/etc/libamazonredshiftodbc64.so" | indent
-#mkdir -p "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/conf" | indent
-cp odbc.ini "${BUILD_DIR}/.apt/etc/odbc.ini" | indent
-
 #arrow "Installing driver config"
 #mkdir -p "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/lib" | indent
-#cp amazon.redshiftodbc.ini "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/lib/amazon.redshiftodbc.ini" | indent
-#cp libamazonredshiftodbc64.so "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/lib/libamazonredshiftodbc64.so" | indent
+#cp amazon.redshiftodbc.ini "${BUILD_DIR}/.apt/etc/amazon.redshiftodbc.ini" | indent
+#cp libamazonredshiftodbc64.so "${BUILD_DIR}/.apt/etc/libamazonredshiftodbc64.so" | indent
 #mkdir -p "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/conf" | indent
-#cp odbc.ini "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/conf/odbc.ini" | indent
+#cp odbc.ini "${BUILD_DIR}/.apt/etc/odbc.ini" | indent
+
+arrow "Installing driver config"
+mkdir -p "${build_dir}/.apt/usr/lib/redshift/odbc/lib" | indent
+cp amazon.redshiftodbc.ini "${build_dir}/.apt/usr/lib/redshift/odbc/conf/amazon.redshiftodbc.ini" | indent
+cp libamazonredshiftodbc64.so "${build_dir}/.apt/usr/lib/redshift/odbc/lib/libamazonredshiftodbc64.so" | indent
+mkdir -p "${build_dir}/.apt/usr/lib/redshift/odbc/conf" | indent
+cp odbc.ini "${build_dir}/.apt/usr/lib/redshift/odbc/conf/odbc.ini" | indent
 
 
 #arrow "Adding profile.d script"
