@@ -19,6 +19,3 @@ mkdir -p "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/conf" | indent
 cp odbc.ini "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/conf/odbc.ini" | indent
 
 
-arrow "Adding profile.d script"
-mkdir -p "${BUILD_DIR}/.profile.d" | indent
-cp .profile.d/redshift-odbc.sh "${BUILD_DIR}/.profile.d" | indent
