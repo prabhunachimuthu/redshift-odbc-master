@@ -19,6 +19,7 @@ ENV_DIR=$3
 #mkdir -p "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/conf" | indent
 cp odbc.ini "${BUILD_DIR}/.apt/usr/lib/odbc/odbc.ini" | indent
 cp odbcinst.ini "${BUILD_DIR}/.apt/usr/lib/odbc/odbcinst.ini" | indent
+cp "${BUILD_DIR}/.apt/usr/lib" "${BUILD_DIR}/etc/lib
 
 #arrow "Installing driver config"
 #mkdir -p "${build_dir}/.apt/usr/lib/redshift/odbc/lib" | indent
