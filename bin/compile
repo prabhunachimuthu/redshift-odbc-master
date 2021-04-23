@@ -28,11 +28,7 @@ cp amazon.redshiftodbc.ini "${BUILD_DIR}/.apt/etc/amazon.redshiftodbc.ini" | ind
 #mkdir -p "${build_dir}/.apt/usr/lib/redshift/odbc/conf" | indent
 #cp odbc.ini "${build_dir}/.apt/usr/lib/redshift/odbc/conf/odbc.ini" | indent
 
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib
-export ODBCINI=/etc/odbc.ini
-export AMAZONREDSHIFTODBCINI=/etc/amazon.redshiftodbc.ini 
-export ODBCSYSINI=/usr/lib/odbc
 
-arrow "Adding profile.d script"
-mkdir -p "${BUILD_DIR}/.profile.d" | indent
-cp .profile.d/redshift-odbc.sh "${BUILD_DIR}/.profile.d" | indent
+#arrow "Adding profile.d script"
+#mkdir -p "${BUILD_DIR}/.profile.d" | indent
+#cp .profile.d/redshift-odbc.sh "${BUILD_DIR}/.profile.d" | indent
