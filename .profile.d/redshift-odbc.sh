@@ -16,17 +16,14 @@
 # " > ${ODBCSYSINI}/odbc.ini
 
 # Install the Redshift ODBC driver manager
-apt-get update \
-    && apt-get install -y --no-install-recommends unixodbc
+# apt-get update \
+    # && apt-get install -y --no-install-recommends unixodbc
 
-if ! curl -s https://s3.amazonaws.com/redshift-downloads/drivers/odbc/1.4.27.1000/AmazonRedshiftODBC-64-bit-1.4.27.1000-1.x86_64.deb -o driver.deb; then
-    echo 'Failed to download Redshift ODBC Driver!' 1>&2
-    exit 1
-fi
+# if ! curl -s https://s3.amazonaws.com/redshift-downloads/drivers/odbc/1.4.27.1000/AmazonRedshiftODBC-64-bit-1.4.27.1000-1.x86_64.deb -o driver.deb; then
+    # echo 'Failed to download Redshift ODBC Driver!' 1>&2
+    # exit 1
+# fi
 
-# Install the Redshift ODBC driver
-apt install ./driver.deb
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib
-export ODBCINI=/etc/odbc.ini
-export AMAZONREDSHIFTODBCINI=/etc/amazon.redshiftodbc.ini 
-export ODBCSYSINI=/usr/local/odbc 
+# # Install the Redshift ODBC driver
+# apt install ./driver.deb
+ 
