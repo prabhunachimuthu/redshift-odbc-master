@@ -12,8 +12,8 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-#arrow "Installing driver config"
-#mkdir -p "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/lib" | indent
+arrow "Installing driver config"
+mkdir -p "${BUILD_DIR}/etc" | indent
 #cp amazon.redshiftodbc.ini "${BUILD_DIR}/.apt/etc/amazon.redshiftodbc.ini" | indent
 #cp libamazonredshiftodbc64.so "${BUILD_DIR}/.apt/usr/lib/odbc/libamazonredshiftodbc64.so" | indent
 #mkdir -p "${BUILD_DIR}/.apt/usr/lib/redshift/odbc/conf" | indent
