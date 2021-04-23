@@ -33,6 +33,6 @@ export ODBCINI=/etc/odbc.ini
 export AMAZONREDSHIFTODBCINI=/etc/amazon.redshiftodbc.ini 
 export ODBCSYSINI=/usr/lib/odbc
 
-# arrow "Adding profile.d script"
-# mkdir -p "${BUILD_DIR}/.profile.d" | indent
-# cp .profile.d/redshift-odbc.sh "${BUILD_DIR}/.profile.d" | indent
+arrow "Adding profile.d script"
+mkdir -p "${BUILD_DIR}/.profile.d" | indent
+cp .profile.d/redshift-odbc.sh "${BUILD_DIR}/.profile.d" | indent
